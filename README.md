@@ -10,6 +10,14 @@ A web platform for football statistics from the Top 5 European Leagues.
 - Add/remove favourite teams (saved in database)
 - Next match display for each favourite team
 
+## How It Looks
+
+<p align="center">
+  <img width="1915" height="743" alt="Image" src="https://github.com/user-attachments/assets/c64407cb-0ac2-40da-b892-c56ef3b88dc2" />
+  <img width="1902" height="931" alt="Image" src="https://github.com/user-attachments/assets/433896cd-c0d0-4bce-b05b-2fb852993ea2" />
+  <img width="1917" height="861" alt="Image" src="https://github.com/user-attachments/assets/17839671-da24-4a17-bbe0-6c9382f57eca" />
+</p>
+
 ## Tech Stack
 
 **Frontend**
