@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootballHub - Matches</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/Calendar.css">
+    <link rel="stylesheet" href="css/date-filters.css">
+    <link rel="stylesheet" href="css/league-filters.css">
+    <link rel="stylesheet" href="css/empty-matches.css">
+    <link rel="stylesheet" href="css/league-sections.css">
+    <link rel="stylesheet" href="css/match-card.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-bold">FOOTBALL</span><span class="logo-light">HUB</span>
+        </a>
+        
+        <div class="nav-links">
+            <a href="index.html" class="nav-item active" id="nav-home">FIXTURES</a>
+            <a href="favorite.html" class="nav-item" id="nav-fav">FAVOURITES</a>
+        </div>
+    </div>
+    </nav>
+    
+    <main id="main-container">
+    
+    <!--Data actualizata in fiecare zi-->
+    <div id="dynamic-date-filters" class="date-filters">
+        <div class="calendar-wrapper" style="display: inline-block;">
+            <button id="custom-calendar-btn" class="date-btn">📅 Date</button>
+        </div>
+    </div>
+
+    <div id="filters-container" class="filters">
+        <button class="filter-btn active" data-league="ALL">All</button>
+        <button class="filter-btn" data-league="PL">
+            <img src="https://i.postimg.cc/wTX1Hc76/Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent-jpg-removebg-preview.png" alt="PL" class="league-logo-pl">
+        </button>
+        <button class="filter-btn" data-league="PD">
+            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/U4pM4toWEW0Sr9NIhY_Lyw_64x64.png" alt="LaLiga" class="league-logo">
+        </button>
+        <button class="filter-btn" data-league="SA">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Serie_A.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="SerieA" class="league-logo-sa">
+        </button>
+        <button class="filter-btn" data-league="BL1">
+            <img src="https://crests.football-data.org/BL1.png" alt="Bundesliga" class="league-logo-bl">
+        </button>
+        <button class="filter-btn" data-league="FL1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg" alt="LIGUE 1" class="league-logo-lg">
+        </button>
+    </div>    
+
+    <section id="PL" class="league-section" style="display: none;">
+        <div class="league-header england">
+            <img src="https://i.postimg.cc/wTX1Hc76/Premier-League-Logo-PNG-Iconic-English-Football-Emblem-Transparent-jpg-removebg-preview.png" alt="PL" class="league-logo-pl">
+            <span class="league-title">PREMIER LEAGUE</span>
+            <span class="country-badge">England</span>
+            <div class="dropdown-circle">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <div class="matches-list"></div>
+    </section>
+
+    <section id="PD" class="league-section" style="display: none;">
+        <div class="league-header spain">
+            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/U4pM4toWEW0Sr9NIhY_Lyw_64x64.png" alt="LaLiga" class="league-logo">
+            <span class="league-title">LALIGA</span>
+            <span class="country-badge">Spain</span>
+            <div class="dropdown-circle">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <div class="matches-list"></div>
+    </section>
+
+    <section id="SA" class="league-section" style="display: none;">
+        <div class="league-header italy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Serie_A.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="SerieA" class="league-logo">
+            <span class="league-title">SERIE A</span>
+            <span class="country-badge">Italy</span>
+            <div class="dropdown-circle">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <div class="matches-list"></div>
+    </section>
+
+    <section id="BL1" class="league-section" style="display: none;">
+        <div class="league-header germany">
+            <img src="https://crests.football-data.org/BL1.png" alt="Bundesliga" class="league-logo">
+            <span class="league-title">BUNDESLIGA</span>
+            <span class="country-badge">Germany</span>
+            <div class="dropdown-circle">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <div class="matches-list"></div>
+    </section>
+
+    <section id="FL1" class="league-section" style="display: none;">
+        <div class="league-header france">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg" alt="LIGUE 1" class="league-logo-lg">
+            <span class="league-title">LIGUE 1</span>
+            <span class="country-badge">France</span>
+            <div class="dropdown-circle">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <div class="matches-list"></div>
+    </section>
+
+    <div id="no-matches-msg" class="empty-state" style="display: none;">
+        <div class="empty-icon">⚽</div>
+        <h3 class="empty-title">It's a quiet day on the pitch</h3>
+        <p class="empty-subtitle">There are no Top 5 League matches scheduled for <strong id="empty-date-text">[Data]</strong>.
+    </div>
+</main>
+    <script src="js/custom-date.js"></script>
+    <script src="js/custom-name&logo.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

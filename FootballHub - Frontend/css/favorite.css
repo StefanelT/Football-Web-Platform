@@ -1,0 +1,118 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0; 
+}
+
+.container {
+    width: 100%;
+    margin: 30px auto; 
+    padding: 0 50px; 
+    box-sizing: border-box;
+}
+
+
+#favorites-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.favorite-card {
+    background-color: #ffffff;
+    border: 1px solid #eef2f5;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    width: 500px;
+}
+
+/* Sus: Informațiile echipei și gunoiul */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.team-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #64748b;
+    transition: transform 0.1s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.15);
+}
+
+/* Jos: Zona meciului următor */
+.next-match-card {
+    background-color: #f8fafc;
+    border: 1px solid #f1f5f9;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start; /* Aliniat curat doar la stânga */
+}
+
+.match-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.match-logos {
+    display: flex;
+    align-items: center;
+}
+
+.mini-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.versus-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.match-date {
+    font-size: 13px;
+    color: #64748b;
+}

@@ -1,0 +1,27 @@
+
+.date-filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.date-btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+}
+
+
+.date-btn.active {
+    background-color: #1a3151;
+    color: white;
+}

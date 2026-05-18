@@ -1,0 +1,39 @@
+
+.filters {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
+    overflow-y: hidden;
+    gap: 12px;         
+    padding-bottom: 10px; 
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+
+.filters-container::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    flex-shrink: 0;
+}
+
+
+
+
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #1a3151; 
+    color: white;
+}

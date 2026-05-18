@@ -1,0 +1,104 @@
+.league-section {
+    margin-bottom: 30px;
+    
+}
+
+
+.england { background-color: blueviolet; } 
+.spain { background-color: #1a3151; }   
+.italy { background-color: #008fd7; }
+.germany { background-color: #d20515; }
+.france { background-color: #dae025; color: black; }
+
+.league-header {
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+    border: 2px solid #1a3151;
+}
+
+.league-logo {
+    width: 24px;
+    height: 50px;
+    object-fit: contain;
+    scale: 2.2;
+}
+
+.league-logo-pl {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 2.5;
+}
+
+.league-logo-lg {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 1.3;
+}
+
+.league-logo-sa {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 2.4;
+}
+
+.league-logo-bl {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 1.7;
+}
+
+.league-title {
+    margin-left: 15px; 
+}
+
+
+.dropdown-circle {
+    width: 28px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: translateY(2px) rotate(225deg); 
+    transition: transform 0.3s ease;
+}
+
+.league-section.collapsed .matches-list {
+    display: none;
+}
+
+.league-section.collapsed .arrow {
+    transform: translateY(-2px) rotate(45deg); 
+}
+
+.league-section.collapsed .league-header {
+    border-radius: 20px; 
+}
+
+.country-badge {
+    background-color: rgba(255, 255, 255, 0.2); /* Un fundal alb, semi-transparent */
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin-right: auto;
+}

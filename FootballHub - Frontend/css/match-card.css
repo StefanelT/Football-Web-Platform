@@ -1,0 +1,93 @@
+.matches-list {
+    background: white;
+    border: 2px solid #1a3151;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+
+}
+
+.match-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 10px 15px;
+    margin: 0; 
+}
+
+.match-time {
+    width: 60px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.live-indicator {
+    color: #00e676; 
+    font-weight: 800;
+    font-size: 0.8rem;
+    animation: blink 1.5s infinite;
+}
+
+.match-divider {
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+    margin: 0 15px;
+}
+
+.match-content {
+    flex-grow: 1; 
+}
+
+
+
+/* --- Stiluri noi pentru Echipe --- */
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-score {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1a3151;
+    min-width: 20px;
+    text-align: center;
+}
+
+.team-logo {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.team-name {
+    font-size: 0.95rem;
+    font-weight: 600; 
+    text-transform: uppercase; 
+}
+
+.star-btn {
+    background: none;       
+    border: none;           
+    padding: 0;            
+    margin: 0;              
+    font-size: 20px;        
+    cursor: pointer;       
+    line-height: 1;         
+    display: flex;
+    scale: 1.4;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease, color 0.2s ease;
+}

@@ -1,0 +1,30 @@
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    margin-top: 20px;
+    border: 2px dashed #d1d5db; 
+}
+
+.empty-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.empty-title {
+    color: #1a3151; 
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.empty-subtitle {
+    color: #6b7280;
+    margin: 0;
+    font-size: 16px;
+}
+
+.empty-subtitle strong {
+    color: #1a3151;
+}
