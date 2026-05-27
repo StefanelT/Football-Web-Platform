@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.football</groupId>
-    <artifactId>FootbalHub-Backend</artifactId>
+    <artifactId>FootballHub-Backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>FootbalHub - Backend</name>
-    <description>FootbalHub - Backend</description>
+    <name>FootballHub - Backend</name>
+    <description>FootballHub - Backend</description>
     <url/>
     <licenses>
         <license/>

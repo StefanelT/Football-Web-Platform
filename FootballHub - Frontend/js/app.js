@@ -13,6 +13,7 @@ async function TeamsAlreadySaved() {
         console.log("Favorite Teams ID:", activeFavoriteIds);
     } catch (error) {
         console.error("The server doesn't work", error);
+        activeFavoriteIds = [];
     }
 }
 

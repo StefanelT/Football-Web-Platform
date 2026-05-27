@@ -9,6 +9,9 @@
 .italy { background-color: #008fd7; }
 .germany { background-color: #d20515; }
 .france { background-color: #dae025; color: black; }
+.ucl {background-color: darkkhaki;}
+.brasil {background-color: yellowgreen}
+.world {background-color: darkred;}
 
 .league-header {
     display: flex; 
@@ -54,6 +57,27 @@
     height: 50px;
     object-fit: contain; 
     scale: 1.7;
+}
+
+.league-logo-ucl {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 2.5;
+}
+
+.league-logo-bsa {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 2.2;
+}
+
+.league-logo-wc {
+    width: 24px;
+    height: 50px;
+    object-fit: contain; 
+    scale: 2.2;
 }
 
 .league-title {

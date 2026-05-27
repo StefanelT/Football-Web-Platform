@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class FootbalHubBackendApplicationTests {
+class FootballHubBackendApplicationTests {
 
     @Autowired
     private TeamRepository teamRepository;
